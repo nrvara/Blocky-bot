@@ -25,6 +25,8 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Copy files
         run: npm run copy
+      - name: Copy webserialEsp32 to app
+        run: cp webserialEsp32* app/
       - name: Make build-swa.sh executable
         run: chmod +x build-swa.sh
       - name: Build project
