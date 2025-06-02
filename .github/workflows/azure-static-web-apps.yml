@@ -41,4 +41,4 @@ jobs:
           action: 'upload'
           app_location: "app"
           output_location: ""
-          app_build_command: "NODE_OPTIONS=--openssl-legacy-provider npx webpack --colors --bail"
+          app_build_command: "./build-swa.sh"
