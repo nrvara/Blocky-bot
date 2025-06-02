@@ -24,12 +24,12 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Copy files
         run: npm run copy
+      - name: Fix webpack permissions
+        run: chmod +x node_modules/.bin/webpack
       - name: Build project
         run: npm run build || true
       - name: Start app
         run: npm start
-      - name: Fix webpack permissions
-        run: chmod +x node_modules/.bin/webpack
       - name: Deploy to Azure Static Web Apps
         id: swa
         uses: Azure/static-web-apps-deploy@v1
