@@ -159,6 +159,10 @@
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.2"
   },
+  "overrides": {
+  "@tensorflow/tfjs-converter": "1.2.1",
+  "@tensorflow/tfjs-core": "1.7.4"
+},
   "jest": {
     "setupFiles": [
       "raf/polyfill",
