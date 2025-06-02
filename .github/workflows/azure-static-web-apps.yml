@@ -43,3 +43,4 @@ jobs:
           app_location: "/app"
           # The output directory after build (empty if build output is in app_location)
           output_location: ""
+          app_build_command: "npm run build"
