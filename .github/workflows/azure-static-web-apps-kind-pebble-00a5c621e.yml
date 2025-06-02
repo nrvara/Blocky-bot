@@ -25,10 +25,8 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Copy files
         run: npm run copy
-      - name: Clean app output directory
-        run: rm -rf app/*
       - name: Build project
-        run: npm run build
+        run: ./build-swa.sh
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
