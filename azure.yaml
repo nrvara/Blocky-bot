@@ -1,0 +1,9 @@
+name: blocky-bot-static-app
+metadata:
+  template: staticwebapp
+services:
+  blocky-bot-static-app:
+    project: .
+    language: js
+    host: staticwebapp
+    port: 80

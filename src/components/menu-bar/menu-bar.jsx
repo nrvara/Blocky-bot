@@ -531,7 +531,7 @@ class MenuBar extends React.Component {
                         </div>
                     </div>
                     <Divider className={classNames(styles.divider)} />
-                    <div
+                    {/* <div
                         className={classNames(
                             styles.menuBarItem,
                             styles.hoverable
@@ -544,9 +544,9 @@ class MenuBar extends React.Component {
                             defaultMessage="Load Firmware A"
                             description="Load Firmware Arduino"
                             id="gui.menuBar.burnFirmware_a"
-                            />
-                    </div>
-                    <div
+                            /> 
+                    </div>*/}
+                    {/* <div
                         className={classNames(
                             styles.menuBarItem,
                             styles.hoverable
@@ -560,7 +560,7 @@ class MenuBar extends React.Component {
                             description="Load Firmware esp"
                             id="gui.menuBar.burnFirmware_e"
                             />
-                    </div>
+                    </div> */}
                     
                     <div
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
