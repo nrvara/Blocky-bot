@@ -26,6 +26,8 @@ jobs:
         run: npm run copy
       - name: Fix webpack permissions
         run: chmod +x node_modules/.bin/webpack
+      - name: Debug webpack binary
+        run: ls -l node_modules/.bin/webpack
       - name: Build project
         run: npm run build || true
       - name: Start app
