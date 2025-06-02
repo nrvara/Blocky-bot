@@ -25,8 +25,6 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Copy files
         run: npm run copy
-      - name: Copy webserialEsp32 to app
-        run: cp webserialEsp32* app/
       - name: Copy webserialEsp32 extension to app root
         run: cp app/scratch-vm/src/extensions/scratch3_webserialEsp32.js app/webserialEsp32.js
       - name: Make build-swa.sh executable
