@@ -396,10 +396,10 @@ class MenuBar extends React.Component {
                                 })}
                                 draggable={false}
                                 src={this.props.logo}
-                                onClick={this.props.onClickLogo}
+                                // onClick={this.props.onClickLogo}
                             />
                         </div>
-                        {(this.props.canChangeLanguage) && (<div
+                        {/* {(this.props.canChangeLanguage) && (<div
                             className={classNames(styles.menuBarItem, styles.hoverable, styles.languageMenu)}
                         >
                             <div>
@@ -480,8 +480,8 @@ class MenuBar extends React.Component {
                                     </MenuSection>
                                 </MenuBarMenu>
                             </div>
-                        )}
-                        <div
+                        )} */}
+                        {/* <div
                             className={classNames(styles.menuBarItem, styles.hoverable, {
                                 [styles.active]: this.props.editMenuOpen
                             })}
@@ -528,7 +528,7 @@ class MenuBar extends React.Component {
                                     )}</TurboMode>
                                 </MenuSection>
                             </MenuBarMenu>
-                        </div>
+                        </div> */}
                     </div>
                     <Divider className={classNames(styles.divider)} />
                     {/* <div
@@ -562,7 +562,7 @@ class MenuBar extends React.Component {
                             />
                     </div> */}
                     
-                    <div
+                    {/* <div
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
                         onClick={this.props.onOpenTipLibrary}
@@ -572,7 +572,7 @@ class MenuBar extends React.Component {
                             src={helpIcon}
                         />
                         <FormattedMessage {...ariaMessages.tutorials} />
-                    </div>
+                    </div> */}
                     <Divider className={classNames(styles.divider)} />
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
@@ -748,7 +748,7 @@ class MenuBar extends React.Component {
                                             />
                                         </div>
                                     </MenuBarItemTooltip>
-                                    <MenuBarItemTooltip
+                                    {/* <MenuBarItemTooltip
                                         id="account-nav"
                                         place={this.props.isRtl ? 'right' : 'left'}
                                     >
@@ -771,7 +771,7 @@ class MenuBar extends React.Component {
                                                 src={dropdownCaret}
                                             />
                                         </div>
-                                    </MenuBarItemTooltip>
+                                    </MenuBarItemTooltip> */}
                                 </React.Fragment>
                             ) : []}
                         </React.Fragment>

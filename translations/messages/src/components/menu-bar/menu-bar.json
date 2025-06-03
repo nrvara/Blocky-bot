@@ -50,31 +50,6 @@
     "defaultMessage": "New"
   },
   {
-    "id": "gui.menuBar.file",
-    "description": "Text for file dropdown menu",
-    "defaultMessage": "File"
-  },
-  {
-    "id": "gui.menuBar.downloadToComputer",
-    "description": "Menu bar item for downloading a project to your computer",
-    "defaultMessage": "Save to your computer"
-  },
-  {
-    "id": "gui.menuBar.edit",
-    "description": "Text for edit dropdown menu",
-    "defaultMessage": "Edit"
-  },
-  {
-    "id": "gui.menuBar.turboModeOff",
-    "description": "Menu bar item for turning off turbo mode",
-    "defaultMessage": "Turn off Turbo Mode"
-  },
-  {
-    "id": "gui.menuBar.turboModeOn",
-    "description": "Menu bar item for turning on turbo mode",
-    "defaultMessage": "Turn on Turbo Mode"
-  },
-  {
     "id": "gui.menuBar.joinScratch",
     "description": "Link for creating a Scratch account",
     "defaultMessage": "Join Scratch"
