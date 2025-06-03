@@ -11,8 +11,8 @@
   },
   "main": "./dist/scratch-gui.js",
   "scripts": {
-    "copy": "cp -Rf ./source/scratch-vm ./app/ && cp -Rf ./source/scratch-l10n ./app/",
-    "copy:win": "xcopy /s .\\source\\scratch-vm .\\app\\scratch-vm && xcopy /s .\\source\\scratch-l10n .\\app\\scratch-l10n",
+    "copy": "cp -Rf ./source/* ./node_modules",
+    "copy:win": "xcopy /s .\\source\\* .\\node_modules",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && npm run clean && npx webpack --colors --bail",
     "build:win": "SET NODE_OPTIONS=--openssl-legacy-provider && npm run clean && webpack --colors --bail",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
