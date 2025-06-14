@@ -174,7 +174,7 @@ const extensions = [
   {
     name: "Web Serial ESP-32",
     extensionId: "webserialEsp32",
-    collaborator: "Nirvara",
+    collaborator: "Nirvara ",
     iconURL: webserialEsp32Image,
     insetIconURL: webserialEsp32InsetIconURL,
     description: (
@@ -189,7 +189,1144 @@ const extensions = [
     internetConnectionRequired: true,
     bluetoothRequired: false,
     helpLink: "https://sites.google.com/view/scratch-web-serial-api/",
-  }
+  },
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="Music"
+        description="Name for the 'Music' extension"
+        id="gui.extension.music.name"
+      />
+    ),
+    extensionId: "music",
+    iconURL: musicIconURL,
+    insetIconURL: musicInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Play instruments and drums."
+        description="Description for the 'Music' extension"
+        id="gui.extension.music.description"
+      />
+    ),
+    featured: true,
+  },
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="Pen"
+        description="Name for the 'Pen' extension"
+        id="gui.extension.pen.name"
+      />
+    ),
+    extensionId: "pen",
+    iconURL: penIconURL,
+    insetIconURL: penInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Draw with your sprites."
+        description="Description for the 'Pen' extension"
+        id="gui.extension.pen.description"
+      />
+    ),
+    featured: true,
+  },
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="Video Sensing"
+        description="Name for the 'Video Sensing' extension"
+        id="gui.extension.videosensing.name"
+      />
+    ),
+    extensionId: "videoSensing",
+    iconURL: videoSensingIconURL,
+    insetIconURL: videoSensingInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Sense motion with the camera."
+        description="Description for the 'Video Sensing' extension"
+        id="gui.extension.videosensing.description"
+      />
+    ),
+    featured: true,
+  },
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="Text to Speech"
+        description="Name for the Text to Speech extension"
+        id="gui.extension.text2speech.name"
+      />
+    ),
+    extensionId: "text2speech",
+    collaborator: "Amazon Web Services",
+    iconURL: text2speechIconURL,
+    insetIconURL: text2speechInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Make your projects talk."
+        description="Description for the Text to speech extension"
+        id="gui.extension.text2speech.description"
+      />
+    ),
+    featured: true,
+    internetConnectionRequired: true,
+  },
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="Translate"
+        description="Name for the Translate extension"
+        id="gui.extension.translate.name"
+      />
+    ),
+    extensionId: "translate",
+    collaborator: "Google",
+    iconURL: translateIconURL,
+    insetIconURL: translateInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Translate text into many languages."
+        description="Description for the Translate extension"
+        id="gui.extension.translate.description"
+      />
+    ),
+    featured: true,
+    internetConnectionRequired: true,
+  },
+  {
+    name: "Makey Makey",
+    extensionId: "makeymakey",
+    collaborator: "JoyLabz",
+    iconURL: makeymakeyIconURL,
+    insetIconURL: makeymakeyInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Make anything into a key."
+        description="Description for the 'Makey Makey' extension"
+        id="gui.extension.makeymakey.description"
+      />
+    ),
+    featured: true,
+  },
+  {
+    name: "micro:bit",
+    extensionId: "microbit",
+    collaborator: "micro:bit",
+    iconURL: microbitIconURL,
+    insetIconURL: microbitInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Connect your projects with the world."
+        description="Description for the 'micro:bit' extension"
+        id="gui.extension.microbit.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    bluetoothRequired: true,
+    internetConnectionRequired: true,
+    launchPeripheralConnectionFlow: true,
+    useAutoScan: false,
+    connectionIconURL: microbitConnectionIconURL,
+    connectionSmallIconURL: microbitConnectionSmallIconURL,
+    connectingMessage: (
+      <FormattedMessage
+        defaultMessage="Connecting"
+        description="Message to help people connect to their micro:bit."
+        id="gui.extension.microbit.connectingMessage"
+      />
+    ),
+    helpLink: "https://scratch.mit.edu/microbit",
+  },
+  {
+    name: "LEGO MINDSTORMS EV3",
+    extensionId: "ev3",
+    collaborator: "LEGO",
+    iconURL: ev3IconURL,
+    insetIconURL: ev3InsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Build interactive robots and more."
+        description="Description for the 'LEGO MINDSTORMS EV3' extension"
+        id="gui.extension.ev3.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    bluetoothRequired: true,
+    internetConnectionRequired: true,
+    launchPeripheralConnectionFlow: true,
+    useAutoScan: false,
+    connectionIconURL: ev3ConnectionIconURL,
+    connectionSmallIconURL: ev3ConnectionSmallIconURL,
+    connectingMessage: (
+      <FormattedMessage
+        defaultMessage="Connecting. Make sure the pin on your EV3 is set to 1234."
+        description="Message to help people connect to their EV3. Must note the PIN should be 1234."
+        id="gui.extension.ev3.connectingMessage"
+      />
+    ),
+    helpLink: "https://scratch.mit.edu/ev3",
+  },
+  {
+    name: "LEGO BOOST",
+    extensionId: "boost",
+    collaborator: "LEGO",
+    iconURL: boostIconURL,
+    insetIconURL: boostInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Bring robotic creations to life."
+        description="Description for the 'LEGO BOOST' extension"
+        id="gui.extension.boost.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    bluetoothRequired: true,
+    internetConnectionRequired: true,
+    launchPeripheralConnectionFlow: true,
+    useAutoScan: true,
+    connectionIconURL: boostConnectionIconURL,
+    connectionSmallIconURL: boostConnectionSmallIconURL,
+    connectionTipIconURL: boostConnectionTipIconURL,
+    connectingMessage: (
+      <FormattedMessage
+        defaultMessage="Connecting"
+        description="Message to help people connect to their BOOST."
+        id="gui.extension.boost.connectingMessage"
+      />
+    ),
+    helpLink: "https://scratch.mit.edu/boost",
+  },
+  {
+    name: "LEGO Education WeDo 2.0",
+    extensionId: "wedo2",
+    collaborator: "LEGO",
+    iconURL: wedo2IconURL,
+    insetIconURL: wedo2InsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Build with motors and sensors."
+        description="Description for the 'LEGO WeDo 2.0' extension"
+        id="gui.extension.wedo2.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    bluetoothRequired: true,
+    internetConnectionRequired: true,
+    launchPeripheralConnectionFlow: true,
+    useAutoScan: true,
+    connectionIconURL: wedo2ConnectionIconURL,
+    connectionSmallIconURL: wedo2ConnectionSmallIconURL,
+    connectionTipIconURL: wedo2ConnectionTipIconURL,
+    connectingMessage: (
+      <FormattedMessage
+        defaultMessage="Connecting"
+        description="Message to help people connect to their WeDo."
+        id="gui.extension.wedo2.connectingMessage"
+      />
+    ),
+    helpLink: "https://scratch.mit.edu/wedo",
+  },
+  {
+    name: "Go Direct Force & Acceleration",
+    extensionId: "gdxfor",
+    collaborator: "Vernier",
+    iconURL: gdxforIconURL,
+    insetIconURL: gdxforInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Sense push, pull, motion, and spin."
+        description="Description for the Vernier Go Direct Force and Acceleration sensor extension"
+        id="gui.extension.gdxfor.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    bluetoothRequired: true,
+    internetConnectionRequired: true,
+    launchPeripheralConnectionFlow: true,
+    useAutoScan: false,
+    connectionIconURL: gdxforConnectionIconURL,
+    connectionSmallIconURL: gdxforConnectionSmallIconURL,
+    connectingMessage: (
+      <FormattedMessage
+        defaultMessage="Connecting"
+        description="Message to help people connect to their force and acceleration sensor."
+        id="gui.extension.gdxfor.connectingMessage"
+      />
+    ),
+    helpLink: "https://scratch.mit.edu/vernier",
+  },
+  // {
+  //   name: (
+  //     <FormattedMessage
+  //       defaultMessage="Chart"
+  //       description="Chart extension"
+  //       id="gui.extension.chart.title"
+  //     />
+  //   ),
+  //   extensionId: "chart",
+  //   collaborator: "TYiC",
+  //   iconURL: chartImage,
+  //   insetIconURL: chartInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Make charts to visualize data."
+  //       description="Make charts to visualize data."
+  //       id="gui.extension.chart.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   useAutoScan: false,
+  //   helpLink: "https://github.com/estea8968/scratch3-internet",
+  // },
+  // {
+  //   name: (
+  //     <FormattedMessage
+  //       defaultMessage="TAIEX"
+  //       description="TAIEX extension"
+  //       id="gui.extension.TAIEX.title"
+  //     />
+  //   ),
+  //   extensionId: "stockInfo",
+  //   collaborator: "TYiC",
+  //   iconURL: stockInfoImage,
+  //   insetIconURL: stockInfoInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Information about Taiwan Capitalization Weighted Stock Index (TAXIE)."
+  //       description="Information about Taiwan Capitalization Weighted Stock Index (TAXIE)."
+  //       id="gui.extension.stockInfo.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   useAutoScan: false,
+  //   helpLink: "https://github.com/estea8968/scratch3-internet",
+  // },
+  {
+    name: "Google Maps",
+    extensionId: "googleMap",
+    collaborator: "Champierre, TYiC",
+    iconURL: googleMapImage,
+    insetIconURL: googleMapInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Display geographic location using the latitude and longitude coordinates (Experimental)."
+        description="Display geographic location using the latitude and longitude coordinates (Experimental)."
+        id="gui.extension.googleMap.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    useAutoScan: false,
+    helpLink: "https://github.com/estea8968/scratch3-internet",
+  },
+  {
+    name:(
+      <FormattedMessage
+        defaultMessage="Data Mining"
+        description="Data Mining extension"
+        id="gui.extension.dataMining.title"
+      />
+    ),
+    extensionId: "dataMining",
+    collaborator: "TYiC",
+    iconURL: dataMiningImage,
+    insetIconURL: dataMiningInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Mining a large amount of data for knowledge exploration and using analytical models to evaluate and predict."
+        description="Mining a large amount of data for knowledge exploration and using analytical models to evaluate and predict."
+        id="gui.extension.dataMining.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    useAutoScan: false,
+    helpLink: "https://github.com/estea8968/scratch3-internet",
+  },
+  {
+    name:(
+      <FormattedMessage
+        defaultMessage="Data Processing"
+        description="Data Processing extension"
+        id="gui.extension.dataProcessing.title"
+      />
+    ),
+    extensionId: "dataProcessing",
+    collaborator: "TYiC",
+    iconURL: dataProcessingImage,
+    insetIconURL: dataProcessingInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Number system conversion and string manipulation."
+        description="Number system conversion and string manipulation."
+        id="gui.extension.dataProcessing.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    useAutoScan: false,
+    helpLink: "https://github.com/estea8968/scratch3-internet",
+  },
+  {
+    name: "JSON",
+    extensionId: "gasoJSON",
+    collaborator: "gasolin, TYiC",
+    iconURL: jsonImage,
+    insetIconURL: jsonInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Fetch JSON."
+        description="Fetch JSON extension"
+        id="gui.extension.gasojson.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://github.com/gasolin/scratch3-internet",
+  },
+  {
+    name: "IFTTT",
+    extensionId: "gasoIFTTT",
+    collaborator: "gasolin",
+    iconURL: iftttImage,
+    insetIconURL: iftttInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="IFTTT Webhook"
+        description="IFTTT Webhook extension"
+        id="gui.extension.gasoifttt.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://github.com/gasolin/scratch3-internet",
+  },
+  // {
+  //   name: "LASS",
+  //   extensionId: "gasoLASS",
+  //   collaborator: "gasolin",
+  //   iconURL: lassImage,
+  //   insetIconURL: lassInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Fetch LASS."
+  //       description="Fetch LASS extension"
+  //       id="gui.extension.gasolass.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   // bluetoothRequired: false,
+  //   internetConnectionRequired: true,
+  //   // launchPeripheralConnectionFlow: false,
+  //   useAutoScan: false,
+  //   helpLink: "https://github.com/gasolin/scratch3-internet",
+  // },
+  {
+    name: "ThingSpeak",
+    extensionId: "gasoThingSpeak",
+    collaborator: "gasolin",
+    iconURL: thingspeakImage,
+    insetIconURL: thingspeakInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Send data to ThingSpeak."
+        description="ThingSpeak extension"
+        id="gui.extension.gasothingspeak.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://github.com/gasolin/scratch3-internet",
+  },
+  {
+    name: "URL & Text File",
+    extensionId: "urlTXT",
+    collaborator: "Nirvara ",
+    iconURL: urltxtImage,
+    insetIconURL: urltxtInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Read and write text files and open a URL."
+        description="get url text data extension"
+        id="gui.extension.urltxt.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://github.com/estea8968/scratch3-internet",
+  },
+
+  {
+    name:(
+      <FormattedMessage
+        defaultMessage="Google Sheets"
+        description="Google Sheets extension"
+        id="gui.extension.rwgoogle.title"
+      />
+    ),
+    extensionId: "rwGoogle",
+    collaborator: "Nirvara , TYiC",
+    iconURL: rwGoogleImage,
+    insetIconURL: rwGoogleInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Read and write Google Sheets and Google Forms."
+        description="read write google sheets extension"
+        id="gui.extension.rwgoogle.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://github.com/estea8968/scratch3-internet",
+  },
+  {
+    name: "MQTT",
+    extensionId: "mqtt",
+    collaborator: "Nirvara ",
+    iconURL: mqttImage,
+    insetIconURL: mqttInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Use MQTT for data transfer."
+        description="MQTT extension"
+        id="gui.extension.Mqtt.description"
+      />
+    ),
+    featured: true,
+
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+    //helpLink: ''
+  },
+  // {
+  //   name: "LineNotify",
+  //   extensionId: "linenotify",
+  //   collaborator: "Nirvara ",
+  //   iconURL: linenotifyImage,
+  //   insetIconURL: linenotifyInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Use Line Notify to send messages."
+  //       description="Use Line Notify to send messages."
+  //       id="gui.extension.linenotify.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  //   //helpLink: ''
+  // },
+  // {
+  //   name: "TelegramBot",
+  //   extensionId: "telegrambot",
+  //   collaborator: "Nirvara ",
+  //   iconURL: telegrambotImage,
+  //   insetIconURL: telegrambotInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Use Line Notify to send messages."
+  //       description="Use Line Notify to send messages."
+  //       id="gui.extension.telegrambot.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  //   //helpLink: ''
+  // },
+  {
+    name: "Push Notify API",
+    extensionId: "pushnotifyapi",
+    collaborator: "Nirvara ",
+    iconURL: pushnotifyapiImage,
+    insetIconURL: pushnotifyapiInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Use Push Notify API app to send messages."
+        description="Use Push Notify API app to send messages."
+        id="gui.extension.pushnotifyapi.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+    //helpLink: ''
+  },
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="QR Code"
+        description="Name for the QR Code extension"
+        id="gui.extension.qrcodeblocks.name"
+      />
+    ),
+    extensionId: "qrcode",
+    collaborator: "Sugiura Lab",
+    iconURL: qrcodeIconURL,
+    insetIconURL: qrcodeInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Scan QR Code.{credit_en}"
+        description="Description for the QR Code extension"
+        values={{
+          credit_ja: (
+            <div style={{ fontSize: "0.6em" }}>
+              QRコードは株式会社デンソーウェーブの登録商標です。
+            </div>
+          ),
+          credit_ja_Hira: (
+            <div
+              style={{
+                fontSize: "0.6em",
+                lineHeight: "1.3",
+                marginTop: "0.5em",
+              }}
+            >
+              QRコードはかぶしきがいしゃデンソーウェーブのとうろくしょうひょうです。
+            </div>
+          ),
+          credit_en: (
+            <div style={{ fontSize: "0.6em" }}>
+              QR Code is a registered trademark of DENSO WAVE.
+            </div>
+          ),
+        }}
+        id="gui.extension.qrcodeblocks.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: false,
+    bluetoothRequired: false,
+    translationMap: {
+      ja: {
+        "gui.extension.qrcodeblocks.name": "QRコード",
+        "gui.extension.qrcodeblocks.description":
+          "QRコードを読み取ります。{credit_ja}",
+      },
+      "ja-Hira": {
+        "gui.extension.qrcodeblocks.name": "QRコード",
+        "gui.extension.qrcodeblocks.description":
+          "QRコードをよみとります。{credit_ja_Hira}",
+      },
+    },
+  },
+  {
+    name: "Web Serial Arduino",
+    extensionId: "webserialArduino",
+    collaborator: "Nirvara ",
+
+    iconURL: webserialArduinoImage,
+    insetIconURL: webserialArduinoInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Connect Arudino and Google Chrome using Web Serial API."
+        description="Web serial for the Arduino extension"
+        id="gui.extension.WebSerialArduino.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+    helpLink: "https://sites.google.com/view/scratch-web-serial-api/",
+  },
+  {
+    name: "Web Serial ESP-8266",
+    extensionId: "webserialEsp",
+    collaborator: "Nirvara ",
+    iconURL: webserialEsp8266Image,
+    insetIconURL: webserialEsp8266InsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Connect ESP-8266 and Google Chrome with Web Serial API."
+        description="Webserial ESP-8266 extension"
+        id="gui.extension.WebserialEsp.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+    helpLink: "https://sites.google.com/view/scratch-web-serial-api/",
+  },
+  // {
+  //   name: "Web Serial PicoBoard",
+  //   extensionId: "webserialPicoboard",
+  //   collaborator: "Nirvara ",
+  //   iconURL: webserialPicoboardImage,
+  //   insetIconURL: webserialPicoboardInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Connect PicoBoard and Google Chrome with Web Serial API."
+  //       description="Connect PicoBoard and Google Chrome with Web Serial API."
+  //       id="gui.extension.WebSerialPcoboard.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  //   helpLink: "https://ys-fang.github.io/OSEP/app/",
+  // },
+  {
+    name: "Microbit More",
+    extensionId: "microbitMore",
+    //extensionURL: 'https://microbit-more.github.io/dist/microbitMore.mjs',
+    collaborator: "Yengawa Lab",
+    iconURL: microbitMoreIconURL,
+    insetIconURL: microbitMoreInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Play with all functions of micro:bit."
+        description="Description for the 'Microbit More' extension"
+        id="gui.extension.microbitMore.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    bluetoothRequired: true,
+    internetConnectionRequired: false,
+    launchPeripheralConnectionFlow: true,
+    useAutoScan: false,
+    connectionIconURL: microbitMoreConnectionIconURL,
+    connectionSmallIconURL: microbitMoreConnectionSmallIconURL,
+    get connectingMessage() {
+      return formatMessage({
+        defaultMessage: "Connecting",
+        description: "Message to help people connect to their micro:bit.",
+        id: "gui.extension.microbit.connectingMessage",
+      });
+    },
+    helpLink: "https://microbit-more.github.io/",
+    setFormatMessage: (formatter) => {
+      formatMessage = formatter;
+    },
+    translationMap: translationMap,
+  },
+  // {
+  //   name: "Web Serial Linkit7697",
+  //   extensionId: "webserialLinkit7697",
+  //   collaborator: "Nirvara ",
+
+  //   iconURL: webserialLinkit7697Image,
+  //   insetIconURL: webserialLinkit7697InsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Connect Linkit7697 and Google Chrome using Web Serial API."
+  //       description="Web serial for the Linkit7697 extension"
+  //       id="gui.extension.WebSerialLinkit7697.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  //   helpLink: "https://sites.google.com/view/scratch-web-serial-api/",
+  // },
+  {
+    name: "Speech to Text",
+    extensionId: "voicetoTEXT",
+    collaborator: "Nirvara ",
+    iconURL: voicetotextImage,
+    insetIconURL: voicetotextInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Convert speech to text."
+        description="Speech To Text extension"
+        id="gui.extension.voicetotext.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: false,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://github.com/estea8968/scratch3-internet",
+  },
+  // {
+  //   name: "ML2Scratch",
+  //   extensionId: "ml2scratch",
+  //   collaborator: "champierre",
+  //   iconURL: ml2scratchIconURL,
+  //   insetIconURL: ml2scratchInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Machine learning for Scratch"
+  //       description="ML2Scratch Blocks."
+  //       id="gui.extension.ml2scratchblocks.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  // },
+  // {
+  //   name: "Posenet2Scratch",
+  //   extensionId: "posenet2scratch",
+  //   collaborator: "champierre",
+  //   iconURL: posenet2scratchIconURL,
+  //   insetIconURL: posenet2scratchInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Pose detection for Scratch"
+  //       description="PoseNet2Scratch Blocks."
+  //       id="gui.extension.posenet2scratchblocks.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  // },
+  // {
+  //   name: "TM2Scratch",
+  //   extensionId: "tm2scratch",
+  //   collaborator: "Tsukurusha, YengawaLab and Google",
+  //   iconURL: tm2scratchIconURL,
+  //   insetIconURL: tm2scratchInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Machine learning for images and sound"
+  //       description="画像や音声を学習させよう。"
+  //       id="gui.extension.tm2scratchblocks.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  // },
+  // {
+  //   name: "TMPose2Scratch",
+  //   extensionId: "tmpose2scratch",
+  //   collaborator: "Tsukurusha, YengawaLab and Google",
+  //   iconURL: tmpose2scratchIconURL,
+  //   insetIconURL: tmpose2scratchInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Recognize your own poses."
+  //       description="Recognize your own poses."
+  //       id="gui.extension.tmpose2scratchblocks.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   internetConnectionRequired: true,
+  //   bluetoothRequired: false,
+  //   translationMap: {
+  //     ja: {
+  //       "gui.extension.tmpose2scratchblocks.description":
+  //         "ポーズを学習させよう。",
+  //     },
+  //     "ja-Hira": {
+  //       "gui.extension.tmpose2scratchblocks.description":
+  //         "ポーズをがくしゅうさせよう。",
+  //     },
+  //     en: {
+  //       "gui.extension.tmpose2scratchblocks.description":
+  //         "Recognize your own poses.",
+  //     },
+  //     ko: {
+  //       "gui.extension.tmpose2scratchblocks.description":
+  //         "나의 몸동작 포즈를 인식해볼까요",
+  //     },
+  //   },
+  // },
+  // {
+  //       name: "Facemesh2Scratch",
+  //       extensionId: "facemesh2scratch",
+  //       collaborator: "champierre",
+  //       iconURL: facemesh2scratchIconURL,
+  //       insetIconURL: facemesh2scratchInsetIconURL,
+  //       description: (
+  //           <FormattedMessage
+  //               defaultMessage='Face Tracking'
+  //               description='Face Tracking'
+  //               id='gui.extension.facemesh2scratch.description'
+  //           />
+  //       ),
+  //       featured: true,
+  //       disabled: false,
+  //       internetConnectionRequired: true,
+  //       bluetoothRequired: false
+  //   },
+  //   {
+  //       name: "Handpose2Scratch",
+  //       extensionId: "handpose2scratch",
+  //       collaborator: "champierre",
+  //       iconURL: handpose2scratchIconURL,
+  //       insetIconURL: handpose2scratchInsetIconURL,
+  //       description: (
+  //           <FormattedMessage
+  //               defaultMessage='HandPose2Scratch Blocks.'
+  //               description='HandPose2Scratch Blocks.'
+  //               id='gui.extension.handpose2scratchblocks.description'
+  //           />
+  //       ),
+  //       featured: true,
+  //       disabled: false,
+  //       internetConnectionRequired: true,
+  //       bluetoothRequired: false,
+  //       helpLink: 'https://champierre.github.io/handpose2scratch/'
+  //   },  
+  {
+    name: "OpenAI",
+    extensionId: "openai",
+    collaborator: "Nirvara ",
+    iconURL: openaiImage,
+    insetIconURL: openaiInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Use OpenAI’s models to process natural language and generate images."
+        description="Use OpenAI’s models to process natural language and generate images."
+        id="gui.extension.openai.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://openai.com/",
+  },
+  {
+    name: "Gemini",
+    extensionId: "gemini",
+    collaborator: "Nirvara ",
+    iconURL: geminiImage,
+    insetIconURL: geminiInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Use Gemini’s models to process natural language and generate images."
+        description="Use Gemini’s models to process natural language and generate images."
+        id="gui.extension.gemini.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    helpLink: "https://www.gemini.com/",
+  },
+  /*{
+    name: "ollama",
+    extensionId: "ollama",
+    collaborator: "Nirvara ",
+    iconURL: ollamaImage,
+    insetIconURL: ollamaInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Use ollama’s models to process natural language and generate images."
+        description="Use ollama’s models to process natural language and generate images."
+        id="gui.extension.ollama.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    //helpLink: "https://www.deepseek.com/",
+  },*/
+  {
+    name: "webserialmicro:bit",
+    extensionId: "webserialmicrobit",
+    collaborator: "micro:bit Nirvara ",
+    iconURL: webserialmicrobitIconURL,
+    insetIconURL: webserialmicrobitInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Connect your projects with the world."
+        description="Description for the 'micro:bit' extension"
+        id="gui.extension.microbit.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    //bluetoothRequired: true,
+    internetConnectionRequired: true,
+    launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+    connectionIconURL: microbitConnectionIconURL,
+    connectionSmallIconURL: microbitConnectionSmallIconURL,
+    connectingMessage: (
+      <FormattedMessage
+        defaultMessage="Connecting"
+        description="Message to help people connect to their micro:bit."
+        id="gui.extension.microbit.connectingMessage"
+      />
+    ),
+    //helpLink: "https://scratch.mit.edu/microbit",
+  }, 
+  // {
+  //   name:(
+  //     <FormattedMessage
+  //       defaultMessage="DaVinci"
+  //       description="MediaTek DaVinci extension"
+  //       id="gui.extension.davinci.title"
+  //     />
+  //   ),
+  //   extensionId: "davinci",
+  //   collaborator: "Nirvara  ",
+  //   iconURL: davinciImage,
+  //   insetIconURL: davinciInsetIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="MediaTek DaVinci AI."
+  //       description="MediaTek DaVinci AI. extension"
+  //       id="gui.extension.davinci.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   // bluetoothRequired: false,
+  //   internetConnectionRequired: true,
+  //   // launchPeripheralConnectionFlow: false,
+  //   useAutoScan: false,
+  //   helpLink: "https://prod.dvcbot.net/",
+  //   },   
+    // {
+    // name:(
+    //   <FormattedMessage
+    //     defaultMessage="LLM Studio"
+    //     description="LLM Studio extension"
+    //     id="gui.extension.llmstudio.title"
+    //   />
+    // ),
+    // extensionId: "llmstudio",
+    // collaborator: "Nirvara  ",
+    // iconURL: llmstudioImage,
+    // insetIconURL: llmstudioInsetIconURL,
+    // description: (
+    //   <FormattedMessage
+    //     defaultMessage="LLM Studio AI."
+    //     description="LLM Studio AI. extension"
+    //     id="gui.extension.llmstudio.description"
+    //   />
+    // ),
+    // featured: true,
+    // disabled: false,
+    // // bluetoothRequired: false,
+    // internetConnectionRequired: true,
+    // // launchPeripheralConnectionFlow: false,
+    // useAutoScan: false,
+    // helpLink: "https://lmstudio.ai/",
+    // },
+    {
+    name: "ic2scratch",
+    extensionId: "ic2scratch",
+    collaborator: "champierre",
+    iconURL: ic2scratchImage,
+    insetIconURL: ic2scratchInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage='Image Classifier Blocks.'
+        description='Image Classifier Blocks.'
+        id='gui.extension.ic2scratch.description'
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+    helpLink: 'https://github.com/champierre/ic2scratch'
+  },
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="Text Sentiment"
+        description="Text Sentiment extension"
+        id="gui.extension.textSentiment.title"
+      />
+    ),
+    extensionId: "textSentiment",
+    collaborator: "TYiC",
+    iconURL: textSentimentImage,
+    insetIconURL: textSentimentInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Text Sentiment."
+        description="Text Sentiment."
+        id="gui.extension.textSentiment.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    useAutoScan: false,
+    helpLink: "https://github.com/estea8968/scratch3-internet",
+  },
+  // {
+  //   name: (
+  //     <FormattedMessage
+  //       defaultMessage="Face Expression Recogintion"
+  //       description="Face Expression Recogintion extension"
+  //       id="gui.extension.faceExpressionRecogintion.title"
+  //     />
+  //   ),
+  //   extensionId: "faceExpressionRecogintion",
+  //   collaborator: "TYiC",
+  //   iconURL: faceExpressionRecogintionImage,
+  //   insetIconURL: faceExpressionRecogintionIconURL,
+  //   description: (
+  //     <FormattedMessage
+  //       defaultMessage="Face Expression Recogintion"
+  //       description="Face Expression Recogintion."
+  //       id="gui.extension.faceExpressionRecogintion.description"
+  //     />
+  //   ),
+  //   featured: true,
+  //   disabled: false,
+  //   // bluetoothRequired: false,
+  //   internetConnectionRequired: true,
+  //   // launchPeripheralConnectionFlow: false,
+  //   useAutoScan: false,
+  // },  
 ];
 export { extensions };
 export default extensions;
