@@ -259,7 +259,7 @@ const extensions = [
       />
     ),
     extensionId: "text2speech",
-    collaborator: "Amazon Web Services",
+    // collaborator: "Amazon Web Services",
     iconURL: text2speechIconURL,
     insetIconURL: text2speechInsetIconURL,
     description: (
@@ -281,7 +281,7 @@ const extensions = [
       />
     ),
     extensionId: "translate",
-    collaborator: "Google",
+    // collaborator: "Google",
     iconURL: translateIconURL,
     insetIconURL: translateInsetIconURL,
     description: (
@@ -297,7 +297,7 @@ const extensions = [
   {
     name: "Makey Makey",
     extensionId: "makeymakey",
-    collaborator: "JoyLabz",
+    collaborator: "Nirvara",
     iconURL: makeymakeyIconURL,
     insetIconURL: makeymakeyInsetIconURL,
     description: (
@@ -434,13 +434,13 @@ const extensions = [
   {
     name: "Go Direct Force & Acceleration",
     extensionId: "gdxfor",
-    collaborator: "Vernier",
+    collaborator: "Nirvara",
     iconURL: gdxforIconURL,
     insetIconURL: gdxforInsetIconURL,
     description: (
       <FormattedMessage
         defaultMessage="Sense push, pull, motion, and spin."
-        description="Description for the Vernier Go Direct Force and Acceleration sensor extension"
+        description="Description for the Nirvara Go Direct Force and Acceleration sensor extension"
         id="gui.extension.gdxfor.description"
       />
     ),
@@ -470,7 +470,7 @@ const extensions = [
   //     />
   //   ),
   //   extensionId: "chart",
-  //   collaborator: "TYiC",
+  //   collaborator: "Nirvara",
   //   iconURL: chartImage,
   //   insetIconURL: chartInsetIconURL,
   //   description: (
@@ -495,7 +495,7 @@ const extensions = [
   //     />
   //   ),
   //   extensionId: "stockInfo",
-  //   collaborator: "TYiC",
+  //   collaborator: "Nirvara",
   //   iconURL: stockInfoImage,
   //   insetIconURL: stockInfoInsetIconURL,
   //   description: (
@@ -514,7 +514,7 @@ const extensions = [
   {
     name: "Google Maps",
     extensionId: "googleMap",
-    collaborator: "Champierre, TYiC",
+    collaborator: "Nirvara",
     iconURL: googleMapImage,
     insetIconURL: googleMapInsetIconURL,
     description: (
@@ -539,7 +539,7 @@ const extensions = [
       />
     ),
     extensionId: "dataMining",
-    collaborator: "TYiC",
+    collaborator: "Nirvara",
     iconURL: dataMiningImage,
     insetIconURL: dataMiningInsetIconURL,
     description: (
@@ -564,7 +564,7 @@ const extensions = [
       />
     ),
     extensionId: "dataProcessing",
-    collaborator: "TYiC",
+    collaborator: "Nirvara",
     iconURL: dataProcessingImage,
     insetIconURL: dataProcessingInsetIconURL,
     description: (
@@ -583,7 +583,7 @@ const extensions = [
   {
     name: "JSON",
     extensionId: "gasoJSON",
-    collaborator: "gasolin, TYiC",
+    collaborator: "Nirvara",
     iconURL: jsonImage,
     insetIconURL: jsonInsetIconURL,
     description: (
@@ -604,7 +604,7 @@ const extensions = [
   {
     name: "IFTTT",
     extensionId: "gasoIFTTT",
-    collaborator: "gasolin",
+    collaborator: "Nirvara",
     iconURL: iftttImage,
     insetIconURL: iftttInsetIconURL,
     description: (
@@ -625,7 +625,7 @@ const extensions = [
   // {
   //   name: "LASS",
   //   extensionId: "gasoLASS",
-  //   collaborator: "gasolin",
+  //   collaborator: "Nirvara",
   //   iconURL: lassImage,
   //   insetIconURL: lassInsetIconURL,
   //   description: (
@@ -646,7 +646,7 @@ const extensions = [
   {
     name: "ThingSpeak",
     extensionId: "gasoThingSpeak",
-    collaborator: "gasolin",
+    collaborator: "Nirvara",
     iconURL: thingspeakImage,
     insetIconURL: thingspeakInsetIconURL,
     description: (
@@ -695,7 +695,7 @@ const extensions = [
       />
     ),
     extensionId: "rwGoogle",
-    collaborator: "Nirvara , TYiC",
+    collaborator: "Nirvara",
     iconURL: rwGoogleImage,
     insetIconURL: rwGoogleInsetIconURL,
     description: (
@@ -799,7 +799,7 @@ const extensions = [
       />
     ),
     extensionId: "qrcode",
-    collaborator: "Sugiura Lab",
+    collaborator: "Nirvara",
     iconURL: qrcodeIconURL,
     insetIconURL: qrcodeInsetIconURL,
     description: (
@@ -911,7 +911,7 @@ const extensions = [
     name: "Microbit More",
     extensionId: "microbitMore",
     //extensionURL: 'https://microbit-more.github.io/dist/microbitMore.mjs',
-    collaborator: "Yengawa Lab",
+    collaborator: "Nirwara",
     iconURL: microbitMoreIconURL,
     insetIconURL: microbitMoreInsetIconURL,
     description: (
@@ -967,7 +967,7 @@ const extensions = [
     extensionId: "voicetoTEXT",
     collaborator: "Nirvara ",
     iconURL: voicetotextImage,
-    insetIconURL: voicetotextInsetIconURL,
+    insetIconURL: text2speechInsetIconURL,
     description: (
       <FormattedMessage
         defaultMessage="Convert speech to text."
@@ -986,7 +986,7 @@ const extensions = [
   // {
   //   name: "ML2Scratch",
   //   extensionId: "ml2scratch",
-  //   collaborator: "champierre",
+  //   collaborator: "Nirvara",
   //   iconURL: ml2scratchIconURL,
   //   insetIconURL: ml2scratchInsetIconURL,
   //   description: (
@@ -1004,7 +1004,7 @@ const extensions = [
   // {
   //   name: "Posenet2Scratch",
   //   extensionId: "posenet2scratch",
-  //   collaborator: "champierre",
+  //   collaborator: "Nirvara",
   //   iconURL: posenet2scratchIconURL,
   //   insetIconURL: posenet2scratchInsetIconURL,
   //   description: (
@@ -1076,7 +1076,7 @@ const extensions = [
   // {
   //       name: "Facemesh2Scratch",
   //       extensionId: "facemesh2scratch",
-  //       collaborator: "champierre",
+  //       collaborator: "Nirvara",
   //       iconURL: facemesh2scratchIconURL,
   //       insetIconURL: facemesh2scratchInsetIconURL,
   //       description: (
@@ -1094,7 +1094,7 @@ const extensions = [
   //   {
   //       name: "Handpose2Scratch",
   //       extensionId: "handpose2scratch",
-  //       collaborator: "champierre",
+  //       collaborator: "Nirvara",
   //       iconURL: handpose2scratchIconURL,
   //       insetIconURL: handpose2scratchInsetIconURL,
   //       description: (
@@ -1108,7 +1108,7 @@ const extensions = [
   //       disabled: false,
   //       internetConnectionRequired: true,
   //       bluetoothRequired: false,
-  //       helpLink: 'https://champierre.github.io/handpose2scratch/'
+  //       helpLink: 'https://Nirvara.github.io/handpose2scratch/'
   //   },  
   {
     name: "OpenAI",
@@ -1260,7 +1260,7 @@ const extensions = [
     {
     name: "ic2scratch",
     extensionId: "ic2scratch",
-    collaborator: "champierre",
+    collaborator: "Nirvara",
     iconURL: ic2scratchImage,
     insetIconURL: ic2scratchInsetIconURL,
     description: (
@@ -1285,7 +1285,7 @@ const extensions = [
       />
     ),
     extensionId: "textSentiment",
-    collaborator: "TYiC",
+    collaborator: "Nirvara",
     iconURL: textSentimentImage,
     insetIconURL: textSentimentInsetIconURL,
     description: (
@@ -1310,7 +1310,7 @@ const extensions = [
       />
     ),
     extensionId: "faceExpressionRecogintion",
-    collaborator: "TYiC",
+    collaborator: "Nirvara",
     iconURL: faceExpressionRecogintionImage,
     insetIconURL: faceExpressionRecogintionIconURL,
     description: (

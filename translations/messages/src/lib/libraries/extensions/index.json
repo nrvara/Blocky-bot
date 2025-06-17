@@ -101,7 +101,7 @@
   },
   {
     "id": "gui.extension.gdxfor.description",
-    "description": "Description for the Vernier Go Direct Force and Acceleration sensor extension",
+    "description": "Description for the Nirvara Go Direct Force and Acceleration sensor extension",
     "defaultMessage": "Sense push, pull, motion, and spin."
   },
   {
