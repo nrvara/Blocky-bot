@@ -1,44 +1,35 @@
 export const title = {
-    'en': 'Face Expression Recogintion',
-    'zh-tw': '臉部表情辨識'
+  en: "Face Expression Recogintion",
 };
 
 export const videoToggle = {
-    'en': 'Set video to [VIDEO_STATE]',
-    'zh-tw': '視訊設為[VIDEO_STATE]'
+  en: "Set video to [VIDEO_STATE]",
 };
 
 export const off = {
-    'en': 'Off',
-    'zh-tw': '關閉'
+  en: "Off",
 };
 
 export const on = {
-    'en': 'On',
-    'zh-tw': '開啟'
+  en: "On",
 };
 
 export const video_on_flipped = {
-    'en': 'Flipped',
-    'zh-tw': '翻轉'
+  en: "Flipped",
 };
 
 export const startFaceRecognition = {
-    'en': 'Start Facial Expression Recognition',
-    'zh-tw': '開始臉部表情辨識'
+  en: "Start Facial Expression Recognition",
 };
 
 export const stopFaceRecognition = {
-    'en': 'Stop Facial Expression Recognition',
-    'zh-tw': '停止臉部表情辨識'
+  en: "Stop Facial Expression Recognition",
 };
 
 export const confidence = {
-    'en': 'Facial Expression Confidence',
-    'zh-tw': '臉部表情置信度'
+  en: "Facial Expression Confidence",
 };
 
 export const facialEmotion = {
-    'en': 'Facial Emotion',
-    'zh-tw': '臉部情緒'
+  en: "Facial Emotion",
 };

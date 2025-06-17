@@ -228,5 +228,15 @@
     "id": "gui.extension.textSentiment.description",
     "description": "Text Sentiment.",
     "defaultMessage": "Text Sentiment."
+  },
+  {
+    "id": "gui.extension.faceExpressionRecogintion.title",
+    "description": "Face Expression Recogintion extension",
+    "defaultMessage": "Face Expression Recogintion"
+  },
+  {
+    "id": "gui.extension.faceExpressionRecogintion.description",
+    "description": "Face Expression Recogintion.",
+    "defaultMessage": "Face Expression Recogintion"
   }
 ]

@@ -1301,32 +1301,32 @@ const extensions = [
     useAutoScan: false,
     helpLink: "https://github.com/estea8968/scratch3-internet",
   },
-  // {
-  //   name: (
-  //     <FormattedMessage
-  //       defaultMessage="Face Expression Recogintion"
-  //       description="Face Expression Recogintion extension"
-  //       id="gui.extension.faceExpressionRecogintion.title"
-  //     />
-  //   ),
-  //   extensionId: "faceExpressionRecogintion",
-  //   collaborator: "TYiC",
-  //   iconURL: faceExpressionRecogintionImage,
-  //   insetIconURL: faceExpressionRecogintionIconURL,
-  //   description: (
-  //     <FormattedMessage
-  //       defaultMessage="Face Expression Recogintion"
-  //       description="Face Expression Recogintion."
-  //       id="gui.extension.faceExpressionRecogintion.description"
-  //     />
-  //   ),
-  //   featured: true,
-  //   disabled: false,
-  //   // bluetoothRequired: false,
-  //   internetConnectionRequired: true,
-  //   // launchPeripheralConnectionFlow: false,
-  //   useAutoScan: false,
-  // },  
+  {
+    name: (
+      <FormattedMessage
+        defaultMessage="Face Expression Recogintion"
+        description="Face Expression Recogintion extension"
+        id="gui.extension.faceExpressionRecogintion.title"
+      />
+    ),
+    extensionId: "faceExpressionRecogintion",
+    collaborator: "TYiC",
+    iconURL: faceExpressionRecogintionImage,
+    insetIconURL: faceExpressionRecogintionIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Face Expression Recogintion"
+        description="Face Expression Recogintion."
+        id="gui.extension.faceExpressionRecogintion.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    // bluetoothRequired: false,
+    internetConnectionRequired: true,
+    // launchPeripheralConnectionFlow: false,
+    useAutoScan: false,
+  },  
 ];
 export { extensions };
 export default extensions;
