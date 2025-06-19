@@ -196,7 +196,7 @@ class faceExpressionRecogintion {
           };
         })
         .catch((error) => {
-          console.error("無法存取攝影機:", error);
+          console.error("Unable to access the camera:", error);
           reject(error);
         });
     });
@@ -204,36 +204,40 @@ class faceExpressionRecogintion {
 
   loadModels() {
     return new Promise((resolve, reject) => {
-      console.log("開始載入模型...");
+      console.log("Loading models...");
       const modelPath = "./static/FERmodels/";
       Promise.all([
         faceapi.nets.tinyFaceDetector.loadFromUri(modelPath),
         faceapi.nets.faceExpressionNet.loadFromUri(modelPath),
       ])
         .then(() => {
-          console.log("所有模型載入完成");
+          console.log("All models loaded");
           resolve();
         })
         .catch((error) => {
-          console.error("模型載入失敗:", error);
+          console.error("Model loading failed:", error);
           reject(error);
         });
     });
   }
 
   _initFaceRecognition() {
-    // return this.runtime.ioDevices.video
-    //   .enableVideo()
-    //   .then(() => {
-    //     this.video = this.runtime.ioDevices.video.provider.video;
-    //     return this.setupTensorFlow();
-    //   })
-    //   .then(() => this.loadModels())
-    //   .then(() => this.startVideo())
-    //   .then(() => {
-    //     this._initialized = true;
-    //     console.log("初始化完成，開始進行臉部表情辨識...");
-    //   });
+    return this.runtime.ioDevices.video
+      .enableVideo()
+      .then(() => {
+        this.video = this.runtime.ioDevices.video.provider.video;
+        // If TensorFlow setup is needed, add here. For now, skip setupTensorFlow as it is commented out.
+        // return this.setupTensorFlow();
+        return Promise.resolve();
+      })
+      .then(() => this.loadModels())
+      .then(() => this.startVideo())
+      .then(() => {
+        this._initialized = true;
+        console.log(
+          "Initialization complete, starting face expression recognition..."
+        );
+      });
   }
 
   startFaceRecognition() {
@@ -244,7 +248,7 @@ class faceExpressionRecogintion {
           this.detectEmotions();
         })
         .catch((error) => {
-          console.error("初始化失敗:", error);
+          console.error("Initialization failed:", error);
         });
     } else {
       if (!this._detecting) {
@@ -256,7 +260,7 @@ class faceExpressionRecogintion {
 
   stopFaceRecognition() {
     this._detecting = false;
-    this.facialEmotion = "已停止臉部表情辨識";
+    this.facialEmotion = "Face expression recognition stopped";
   }
 
   detectEmotions() {
@@ -297,13 +301,13 @@ class faceExpressionRecogintion {
             this.confidence = confidence;
           }
         } else {
-          this.facialEmotion = "無法偵測到臉部";
+          this.facialEmotion = "No face detected";
         }
         if (this._detecting) {
           requestAnimationFrame(detect);
         }
       } catch (error) {
-        console.error("偵測錯誤:", error);
+        console.error("Detection error:", error);
         if (this._detecting) {
           requestAnimationFrame(detect);
         }

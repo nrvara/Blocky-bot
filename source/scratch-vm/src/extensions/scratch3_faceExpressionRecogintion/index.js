@@ -222,18 +222,22 @@ class faceExpressionRecogintion {
   }
 
   _initFaceRecognition() {
-    // return this.runtime.ioDevices.video
-    //   .enableVideo()
-    //   .then(() => {
-    //     this.video = this.runtime.ioDevices.video.provider.video;
-    //     return this.setupTensorFlow();
-    //   })
-    //   .then(() => this.loadModels())
-    //   .then(() => this.startVideo())
-    //   .then(() => {
-    //     this._initialized = true;
-    //     console.log("初始化完成，開始進行臉部表情辨識...");
-    //   });
+    return this.runtime.ioDevices.video
+      .enableVideo()
+      .then(() => {
+        this.video = this.runtime.ioDevices.video.provider.video;
+        // If TensorFlow setup is needed, add here. For now, skip setupTensorFlow as it is commented out.
+        // return this.setupTensorFlow();
+        return Promise.resolve();
+      })
+      .then(() => this.loadModels())
+      .then(() => this.startVideo())
+      .then(() => {
+        this._initialized = true;
+        console.log(
+          "Initialization complete, starting face expression recognition..."
+        );
+      });
   }
 
   startFaceRecognition() {
@@ -244,7 +248,7 @@ class faceExpressionRecogintion {
           this.detectEmotions();
         })
         .catch((error) => {
-          console.error("初始化失敗:", error);
+          console.error("Initialization failed:", error);
         });
     } else {
       if (!this._detecting) {
@@ -256,7 +260,7 @@ class faceExpressionRecogintion {
 
   stopFaceRecognition() {
     this._detecting = false;
-    this.facialEmotion = "已停止臉部表情辨識";
+    this.facialEmotion = "Face expression recognition stopped";
   }
 
   detectEmotions() {
@@ -279,13 +283,13 @@ class faceExpressionRecogintion {
           if (detection && detection.expressions) {
             const emotions = detection.expressions;
             const emotionLabels = {
-              neutral: "平靜",
-              happy: "開心",
-              sad: "難過",
-              angry: "生氣",
-              fearful: "害怕",
-              disgusted: "厭惡",
-              surprised: "驚訝",
+              neutral: "Neutral",
+              happy: "Happy",
+              sad: "Sad",
+              angry: "Angry",
+              fearful: "Fearful",
+              disgusted: "Disgusted",
+              surprised: "Surprised",
             };
             const mainEmotion = Object.entries(emotions).sort(
               (a, b) => b[1] - a[1]
@@ -297,13 +301,13 @@ class faceExpressionRecogintion {
             this.confidence = confidence;
           }
         } else {
-          this.facialEmotion = "無法偵測到臉部";
+          this.facialEmotion = "No face detected";
         }
         if (this._detecting) {
           requestAnimationFrame(detect);
         }
       } catch (error) {
-        console.error("偵測錯誤:", error);
+        console.error("Detection error:", error);
         if (this._detecting) {
           requestAnimationFrame(detect);
         }
