@@ -983,133 +983,133 @@ const extensions = [
     useAutoScan: false,
     helpLink: "https://github.com/estea8968/scratch3-internet",
   },
-  // {
-  //   name: "ML2Scratch",
-  //   extensionId: "ml2scratch",
-  //   collaborator: "Nirvara",
-  //   iconURL: ml2scratchIconURL,
-  //   insetIconURL: ml2scratchInsetIconURL,
-  //   description: (
-  //     <FormattedMessage
-  //       defaultMessage="Machine learning for Scratch"
-  //       description="ML2Scratch Blocks."
-  //       id="gui.extension.ml2scratchblocks.description"
-  //     />
-  //   ),
-  //   featured: true,
-  //   disabled: false,
-  //   internetConnectionRequired: true,
-  //   bluetoothRequired: false,
-  // },
-  // {
-  //   name: "Posenet2Scratch",
-  //   extensionId: "posenet2scratch",
-  //   collaborator: "Nirvara",
-  //   iconURL: posenet2scratchIconURL,
-  //   insetIconURL: posenet2scratchInsetIconURL,
-  //   description: (
-  //     <FormattedMessage
-  //       defaultMessage="Pose detection for Scratch"
-  //       description="PoseNet2Scratch Blocks."
-  //       id="gui.extension.posenet2scratchblocks.description"
-  //     />
-  //   ),
-  //   featured: true,
-  //   disabled: false,
-  //   internetConnectionRequired: true,
-  //   bluetoothRequired: false,
-  // },
-  // {
-  //   name: "TM2Scratch",
-  //   extensionId: "tm2scratch",
-  //   collaborator: "Tsukurusha, YengawaLab and Google",
-  //   iconURL: tm2scratchIconURL,
-  //   insetIconURL: tm2scratchInsetIconURL,
-  //   description: (
-  //     <FormattedMessage
-  //       defaultMessage="Machine learning for images and sound"
-  //       description="画像や音声を学習させよう。"
-  //       id="gui.extension.tm2scratchblocks.description"
-  //     />
-  //   ),
-  //   featured: true,
-  //   disabled: false,
-  //   internetConnectionRequired: true,
-  //   bluetoothRequired: false,
-  // },
-  // {
-  //   name: "TMPose2Scratch",
-  //   extensionId: "tmpose2scratch",
-  //   collaborator: "Tsukurusha, YengawaLab and Google",
-  //   iconURL: tmpose2scratchIconURL,
-  //   insetIconURL: tmpose2scratchInsetIconURL,
-  //   description: (
-  //     <FormattedMessage
-  //       defaultMessage="Recognize your own poses."
-  //       description="Recognize your own poses."
-  //       id="gui.extension.tmpose2scratchblocks.description"
-  //     />
-  //   ),
-  //   featured: true,
-  //   disabled: false,
-  //   internetConnectionRequired: true,
-  //   bluetoothRequired: false,
-  //   translationMap: {
-  //     ja: {
-  //       "gui.extension.tmpose2scratchblocks.description":
-  //         "ポーズを学習させよう。",
-  //     },
-  //     "ja-Hira": {
-  //       "gui.extension.tmpose2scratchblocks.description":
-  //         "ポーズをがくしゅうさせよう。",
-  //     },
-  //     en: {
-  //       "gui.extension.tmpose2scratchblocks.description":
-  //         "Recognize your own poses.",
-  //     },
-  //     ko: {
-  //       "gui.extension.tmpose2scratchblocks.description":
-  //         "나의 몸동작 포즈를 인식해볼까요",
-  //     },
-  //   },
-  // },
-  // {
-  //       name: "Facemesh2Scratch",
-  //       extensionId: "facemesh2scratch",
-  //       collaborator: "Nirvara",
-  //       iconURL: facemesh2scratchIconURL,
-  //       insetIconURL: facemesh2scratchInsetIconURL,
-  //       description: (
-  //           <FormattedMessage
-  //               defaultMessage='Face Tracking'
-  //               description='Face Tracking'
-  //               id='gui.extension.facemesh2scratch.description'
-  //           />
-  //       ),
-  //       featured: true,
-  //       disabled: false,
-  //       internetConnectionRequired: true,
-  //       bluetoothRequired: false
-  //   },
-  //   {
-  //       name: "Handpose2Scratch",
-  //       extensionId: "handpose2scratch",
-  //       collaborator: "Nirvara",
-  //       iconURL: handpose2scratchIconURL,
-  //       insetIconURL: handpose2scratchInsetIconURL,
-  //       description: (
-  //           <FormattedMessage
-  //               defaultMessage='HandPose2Scratch Blocks.'
-  //               description='HandPose2Scratch Blocks.'
-  //               id='gui.extension.handpose2scratchblocks.description'
-  //           />
-  //       ),
-  //       featured: true,
-  //       disabled: false,
-  //       internetConnectionRequired: true,
-  //       bluetoothRequired: false,
-  //       helpLink: 'https://Nirvara.github.io/handpose2scratch/'
-  //   },  
+  {
+    name: "ML2Scratch",
+    extensionId: "ml2scratch",
+    collaborator: "Nirvara",
+    iconURL: ml2scratchIconURL,
+    insetIconURL: ml2scratchInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Machine learning for Scratch"
+        description="ML2Scratch Blocks."
+        id="gui.extension.ml2scratchblocks.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+  },
+  {
+    name: "Posenet2Scratch",
+    extensionId: "posenet2scratch",
+    collaborator: "Nirvara",
+    iconURL: posenet2scratchIconURL,
+    insetIconURL: posenet2scratchInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Pose detection for Scratch"
+        description="PoseNet2Scratch Blocks."
+        id="gui.extension.posenet2scratchblocks.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+  },
+  {
+    name: "TM2Scratch",
+    extensionId: "tm2scratch",
+    collaborator: "Tsukurusha, YengawaLab and Google",
+    iconURL: tm2scratchIconURL,
+    insetIconURL: tm2scratchInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Machine learning for images and sound"
+        description="画像や音声を学習させよう。"
+        id="gui.extension.tm2scratchblocks.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+  },
+  {
+    name: "TMPose2Scratch",
+    extensionId: "tmpose2scratch",
+    collaborator: "Tsukurusha, YengawaLab and Google",
+    iconURL: tmpose2scratchIconURL,
+    insetIconURL: tmpose2scratchInsetIconURL,
+    description: (
+      <FormattedMessage
+        defaultMessage="Recognize your own poses."
+        description="Recognize your own poses."
+        id="gui.extension.tmpose2scratchblocks.description"
+      />
+    ),
+    featured: true,
+    disabled: false,
+    internetConnectionRequired: true,
+    bluetoothRequired: false,
+    translationMap: {
+      ja: {
+        "gui.extension.tmpose2scratchblocks.description":
+          "ポーズを学習させよう。",
+      },
+      "ja-Hira": {
+        "gui.extension.tmpose2scratchblocks.description":
+          "ポーズをがくしゅうさせよう。",
+      },
+      en: {
+        "gui.extension.tmpose2scratchblocks.description":
+          "Recognize your own poses.",
+      },
+      ko: {
+        "gui.extension.tmpose2scratchblocks.description":
+          "나의 몸동작 포즈를 인식해볼까요",
+      },
+    },
+  },
+  {
+        name: "Facemesh2Scratch",
+        extensionId: "facemesh2scratch",
+        collaborator: "Nirvara",
+        iconURL: facemesh2scratchIconURL,
+        insetIconURL: facemesh2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='Face Tracking'
+                description='Face Tracking'
+                id='gui.extension.facemesh2scratch.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
+    {
+        name: "Handpose2Scratch",
+        extensionId: "handpose2scratch",
+        collaborator: "Nirvara",
+        iconURL: handpose2scratchIconURL,
+        insetIconURL: handpose2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='HandPose2Scratch Blocks.'
+                description='HandPose2Scratch Blocks.'
+                id='gui.extension.handpose2scratchblocks.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://Nirvara.github.io/handpose2scratch/'
+    },  
   {
     name: "OpenAI",
     extensionId: "openai",

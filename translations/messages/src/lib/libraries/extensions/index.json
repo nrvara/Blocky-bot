@@ -205,6 +205,36 @@
     "defaultMessage": "Convert speech to text."
   },
   {
+    "id": "gui.extension.ml2scratchblocks.description",
+    "description": "ML2Scratch Blocks.",
+    "defaultMessage": "Machine learning for Scratch"
+  },
+  {
+    "id": "gui.extension.posenet2scratchblocks.description",
+    "description": "PoseNet2Scratch Blocks.",
+    "defaultMessage": "Pose detection for Scratch"
+  },
+  {
+    "id": "gui.extension.tm2scratchblocks.description",
+    "description": "画像や音声を学習させよう。",
+    "defaultMessage": "Machine learning for images and sound"
+  },
+  {
+    "id": "gui.extension.tmpose2scratchblocks.description",
+    "description": "Recognize your own poses.",
+    "defaultMessage": "Recognize your own poses."
+  },
+  {
+    "id": "gui.extension.facemesh2scratch.description",
+    "description": "Face Tracking",
+    "defaultMessage": "Face Tracking"
+  },
+  {
+    "id": "gui.extension.handpose2scratchblocks.description",
+    "description": "HandPose2Scratch Blocks.",
+    "defaultMessage": "HandPose2Scratch Blocks."
+  },
+  {
     "id": "gui.extension.openai.description",
     "description": "Use OpenAI’s models to process natural language and generate images.",
     "defaultMessage": "Use OpenAI’s models to process natural language and generate images."
