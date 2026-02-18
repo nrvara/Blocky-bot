@@ -1,0 +1,30 @@
+/* Fresh Layout File to Bypass Cache */
+
+.layout-container {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 60vw;
+    margin: 0 auto;
+    background-color: #FAFBFC;
+    min-height: 100vh;
+    border: 5px solid red;
+    /* Debug border to prove file is loaded */
+}
+
+.sidebar {
+    width: 250px !important;
+    min-width: 250px !important;
+    background: #FFFFFF;
+    border-right: 1px solid #DFEAF2;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.main-content {
+    flex: 1 !important;
+    padding: 30px 40px;
+    background: transparent;
+    width: 100%;
+}

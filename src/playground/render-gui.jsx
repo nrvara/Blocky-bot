@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {compose} from 'redux';
+import { compose } from 'redux';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import AppStateHOC from '../lib/app-state-hoc.jsx';
 import GUI from '../containers/gui.jsx';
 import HashParserHOC from '../lib/hash-parser-hoc.jsx';
 import log from '../lib/log.js';
+
+import LoginPage from '../components/login/LoginPage.jsx';
+import AdminDashboard from '../components/admin/AdminDashboard.jsx';
+import TeacherDashboard from '../components/teacher/TeacherDashboard.jsx';
 
 const onClickLogo = () => {
     window.location = 'https://sites.google.com/view/scratch-web-serial-api/';
@@ -65,7 +70,7 @@ export default appTarget => {
         window.onbeforeunload = () => true;
     }
 
-    ReactDOM.render(
+    const ScratchGUI = () => (
         // important: this is checking whether `simulateScratchDesktop` is truthy, not just defined!
         simulateScratchDesktop ?
             <WrappedGui
@@ -84,6 +89,18 @@ export default appTarget => {
                 backpackHost={backpackHost}
                 canSave={false}
                 onClickLogo={onClickLogo}
-            />,
+            />
+    );
+
+    ReactDOM.render(
+        <Router>
+            <Switch>
+                <Route path="/login" component={LoginPage} />
+                <Route path="/admin" component={AdminDashboard} />
+                <Route path="/teacher" component={TeacherDashboard} />
+                <Route path="/editor" component={ScratchGUI} />
+                <Redirect to="/login" />
+            </Switch>
+        </Router>,
         appTarget);
 };
